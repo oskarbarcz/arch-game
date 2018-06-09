@@ -1,4 +1,4 @@
 <?php
 $_SESSION['Objects']['User'] = null;
-header("Location: /login");
+header("Location: /menu");
 die;

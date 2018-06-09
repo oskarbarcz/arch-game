@@ -1,0 +1,35 @@
+{% include "common/header.twig" %}
+
+<header class="container register-header outer-shadow">
+    <img src="../img/main-logo.png" alt=""><h1>archigame</h1>
+</header>
+<main class="container register-element outer-shadow">
+    <h2>Zarejestruj się</h2>
+    <form class="register-element-form" method="post" action="register">
+        <label for="login">Podaj swój wymarzony login...</label>
+        <input id="login" name="login" type="text" placeholder="login" required />
+        <label for="password">...i hasło kótrym będziesz się logować</label>
+        <input id="password" name="password" type="password" placeholder="hasło" required />
+        <label for="password2">...i jeszcze raz dla pewności...</label>
+        <input id="password2" name="password2" type="password" placeholder="powtórz hasło.." required />
+        <input type="submit" value="Zarejestruj >" />
+    </form>
+</main>
+{% if error %}
+    <aside class="container register-warning outer-shadow">
+        {{error}}
+    </aside>
+{% endif %}
+{% if good %}
+    <aside class="container register-good outer-shadow">
+        {{good}}
+    </aside>
+{% endif %}
+<nav class="container register-element outer-shadow">
+    <a class="link-as-button" href="/menu">Powrót do menu</a>
+</nav>
+<footer class="container register-footer outer-shadow">
+    <p>Oskar Barcz &copy; 2018</p>
+</footer>
+
+{% include "common/footer.twig" %}

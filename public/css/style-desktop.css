@@ -87,10 +87,10 @@ Font for texts: 'Open Sans', sans-serif;
     padding: 4px;
 } .login-element-form input {
     font-family: 'Signika Negative', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     outline: none;
     border: none;
-    padding: 8px;
+    padding: 5px;
     text-align: center;
     width: 85%;
     background: #fffe;
@@ -133,6 +133,88 @@ Font for texts: 'Open Sans', sans-serif;
 } .menu-header img {
     height: 50px;
 } .menu-info {
+    background: #89E894;
+    color: #fffd;
+}
+/* #endregion */
+/* #region START */
+.start-header {
+    margin-top: 200px;
+    padding: 10px;
+} .start-header h1 {
+    display: none;
+} .start-header img {
+    height: 50px;
+} .start-info {
+    background: #89E894;
+    color: #fffd;
+}
+/* #endregion */
+/* #region REGISTER */
+
+.register-header {
+    margin-top: 200px;
+    padding: 10px;
+} .register-header h1 {
+    display: none;
+} .register-header img {
+    height: 50px;
+} .register-element h2 {
+    padding: 5px;
+    font-size: 28px;
+} .register-element-form label {
+    display: block;
+    padding: 4px;
+} .register-element-form input {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    width: 85%;
+    background: #fffe;
+    color: #333;
+    border: 2px #fffe solid;
+} .register-element-form input:hover {
+    background: #efefef;
+    border: 2px #efefef solid;
+    transition: 0.2s ease-in-out;
+} .register-element-form input:focus {
+    background: #fffe;
+    transition: 0.2s ease-in-out;
+    border: 2px #666e solid;
+    border-radius: 2px;
+} .register-element-form input[type="submit"] {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    background: #666e;
+    border: 2px #666e solid;
+    color: #fffd;
+} .register-element-form input[type="submit"]:hover {
+    background: #E03C32;
+    border: 2px #E03C32 solid;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 2px;
+} .register-warning {
+    background: #E03C32;
+    color: #fffd;
+} .register-good {
+    background: #89E894;
+    color: #fffd;
+}
+/* #endregion */
+/* #region AUTHORS */
+.author-header {
+    margin-top: 200px;
+    padding: 10px;
+} .author-header h1 {
+    display: none;
+} .author-header img {
+    height: 50px;
+} .author-info {
     background: #89E894;
     color: #fffd;
 }

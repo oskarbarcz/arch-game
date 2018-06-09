@@ -1,0 +1,18 @@
+{% include "common/header.twig" %}
+
+<header class="container start-header outer-shadow">
+    <img src="../img/main-logo.png" alt="archigame"><h1>archigame</h1>
+</header>
+<main class="container start-element outer-shadow">
+    <p>Let's play a game. Dalej, możesz wrzucić siebie w świat przygody na trzy różne sposoby, lub użyć naszego randoma.</p>
+    <a class="link-as-button" href="/card/1">Rozpoczęcie 1</a>
+    <a class="link-as-button" href="/card/2">Rozpoczęcie 2</a>
+    <a class="link-as-button" href="/card/3">Rozpoczęcie 3</a>
+    <a class="link-as-button" href="/card/{{rand}}">LOSOWE ROZPOCZĘCIE</a>
+</main>
+<footer class="container start-footer outer-shadow">
+    <p>Oskar Barcz &copy; 2018</p>
+</footer>
+    
+
+{% include "common/footer.twig" %}
