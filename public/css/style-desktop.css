@@ -145,9 +145,6 @@ Font for texts: 'Open Sans', sans-serif;
     display: none;
 } .start-header img {
     height: 50px;
-} .start-info {
-    background: #89E894;
-    color: #fffd;
 }
 /* #endregion */
 /* #region REGISTER */
@@ -214,8 +211,32 @@ Font for texts: 'Open Sans', sans-serif;
     display: none;
 } .author-header img {
     height: 50px;
-} .author-info {
-    background: #89E894;
-    color: #fffd;
+} .author-element img {
+    height: 100px;
+} .author-element h1 {
+    font-size: 22px;
+    padding-top: 5px;
+} .author-element h2 {
+    font-size: 22px;
+    padding-top: 5px;
+} .author-element-subtitle {
+    letter-spacing: 2px;
+} .author-element-website {
+    letter-spacing: 2px;
+    padding-top: 10px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+/* #endregion */
+/* #region ABOUT GAME */
+.about-element {
+    margin-top: 200px;
+    padding: 10px;
+} .about-element img {
+    padding: 20px;
+    height: 80px;
+} .about-element p {
+    padding: 5px;
+    text-align: justify;
 }
 /* #endregion */

@@ -77,7 +77,10 @@ return [
         '/menu' => 'menu/menu',
         '/register' => 'menu/register',
 
-        '/start' => 'game/start'
+        '/start' => 'game/start',
+
+        '/authors' => 'about/author',
+        '/about' => 'about/game'
     ],
 
     // Advanced router is used for articles and many more regular elements. 
