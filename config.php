@@ -63,7 +63,7 @@ return [
     'twigConfig' =>
     [
         'twigWrappersPath' => '../assets/wrappers/',
-        'twigTemplatesPath' => '..\assets\templates'
+        'twigTemplatesPath' => '../assets/templates'
     ],
 
     // Add routing here, in the way like this:
@@ -71,21 +71,24 @@ return [
     // where x is your link and y is your wrapper and template files
     'router' =>
     [
-        '/' => 'index',
+        '/' => 'menu/menu',
         '/login' => 'menu/login',
         '/logoff' => 'menu/logoff',
         '/menu' => 'menu/menu',
         '/register' => 'menu/register',
 
         '/start' => 'game/start',
+        '/card' => 'game/card',
 
         '/authors' => 'about/author',
         '/about' => 'about/game'
     ],
 
-    // Advanced router is used for articles and many more regular elements. 
+    // Advanced router is used for articles and many more regular elements.
+    // Even if you are using advaced router, mind that you need to specify where to look for templates and wrappers. You are putting this info as default - in 'router' subarray.
     'advancedRouter' => 
     [
-        // there's no routes by default
+        '/card',
+
     ]
 ];
