@@ -4,15 +4,20 @@
     <img src="../img/main-logo.png" alt="archigame"><h1>archigame</h1>
 </header>
 <main class="container card-element outer-shadow">
-    <h2><span class="fas fa-file fa-fw"></span> Karta nr {{number}}</h2>
-    <p>Budzisz się. Patrzysz we wszystkie strony, znasz skądś to miejsce. Boli Cię strasznie głowa, leżysz kulturalnie na ławeczce. Co gorsza - leżysz kompletnie nagi. Na dworze jest jeszcze ciemno, ale powoli się przejaśnia. Byłeś tu - to kozielski rynek! Widzisz powoli idących w Twoją stronę strażników miejskich, no jak nic będzie mandat...</p>
+    <h2><span class="fas fa-file fa-fw"></span> Karta nr {{card.id}}</h2>
+    <p>{{card.textContent}}</p>
 </main>
 <nav class="container card-element outer-shadow">
-    <h2>Co możesz teraz zrobić:</h2>
-    <a class="card-element-link" href="/card/1"><span class="fas fa-angle-right fa-fw"></span>Idziesz na piwo</a>
-    <a class="card-element-link" href="/card/1"><span class="fas fa-angle-right fa-fw"></span>Szukasz ubrań na szybko</a>
-    <a class="card-element-link" href="/card/1"><span class="fas fa-angle-right fa-fw"></span>Kładziesz się na drugi bok i śpisz dalej</a>
-    <a class="card-element-link" href="/card/1"><span class="fas fa-angle-right fa-fw"></span>Próbujesz rozmawiać ze strażnikami...</a>
+    {% if links %}
+        <h2>Co możesz teraz zrobić:</h2>
+        {% for key, content in links %}
+            <a class="card-element-link" href="/card/{{key}}"><span class="fas fa-angle-right fa-fw"></span>{{content}}</a>
+        {% endfor %}
+    {% else %}
+        <h2>Nic nie możesz zrobić :/</h2>
+        <a class="card-element-link" href="/start"><span class="fas fa-angle-right fa-fw"></span>Znaczy możesz, zawsze możesz zacząć od zera...</a>
+    {% endif %}
+    
 </nav>
 <nav class="container outer-shadow">
         <a class="link-as-button" href="/menu">Zacznij od początku</a>
