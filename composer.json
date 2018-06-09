@@ -1,0 +1,25 @@
+{
+    "name": "okbrcz/arch-fw",
+    "type": "framework",
+    "description": "Boilerplate and simple framework for PHP7.0",
+    "homepage": "https://github.com/okbrcz/ArchFW",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oskar 'archi_tektur' Barcz",
+            "email": "kontakt@archi-tektur.pl",
+            "homepage": "https://www.archi-tektur.pl",
+            "role": "Developer"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.0",
+        "twig/twig": "^2.0"
+    }
+}

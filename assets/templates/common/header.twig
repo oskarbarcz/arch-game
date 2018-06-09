@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{{metaComment|raw}}
+<html lang="{{pageLanguage}}">
+  <head>
+      <meta charset="{{pageEncoding|raw}}">
+      <title>{{pageTitle}}</title>
+      <link rel="icon"
+        type="image/png"
+        href="https://www.via.placeholder.com/32x32">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{pageDescription}}">
+        <meta name="keywords" content="{{pageKeywords}}">
+        <meta name="author" content="{{pageAuthor}}">
+        {% for each in stylesheets %}
+        <!-- {{each.name}} -->
+        <link type="{{each.type}}" rel="{{each.rel}}" href="{{each.link}}" />
+        {% endfor %}
+  </head>
+  <body>

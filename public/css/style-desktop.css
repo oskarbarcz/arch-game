@@ -1,0 +1,112 @@
+/*
+Oskar Barcz 2018
+CSS3 Framework "ArchFW"
+Filename: style-desktop.css
+
+Adobe Color link: https://color.adobe.com/DB-Style-color-theme-10412252/
+
+Background color: #2C3E50
+Accent color: #E74C3C
+Div background color: #ECF0F1
+Another (blue): #3498DB
+Another (darker blue): #2980B9
+
+Font for titles: 'Crete Round', serif;
+Font for texts: 'Open Sans', sans-serif;
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative');
+
+/* MAIN ELEMENTS */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url("../img/bgr.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+/* #region COMMON ELEMENTS*/
+
+.container {
+    width: 350px;
+    background: #eeec;
+    color: #333;
+    height: auto;
+    min-height: 30px;
+    padding: 10px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    text-align: center;
+} .outer-shadow {
+    -webkit-box-shadow: -2px 2px 14px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 14px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px 2px 14px -1px rgba(0,0,0,0.75);
+}
+/* #endregion */
+/* #region LOGIN */
+
+.login-header {
+    margin-top: 200px;
+    padding: 10px;
+} .login-header h1 {
+    display: none;
+} .login-header img {
+    height: 50px;
+} .login-element h2 {
+    padding: 5px;
+    font-size: 28px;
+} .login-element-form label {
+    display: block;
+    padding: 4px;
+} .login-element-form input {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    width: 85%;
+    background: #fffe;
+    color: #333;
+    border: 2px #fffe solid;
+} .login-element-form input:hover {
+    background: #efefef;
+    border: 2px #efefef solid;
+    transition: 0.2s ease-in-out;
+} .login-element-form input:focus {
+    background: #fffe;
+    transition: 0.2s ease-in-out;
+    border: 2px #666e solid;
+    border-radius: 2px;
+} .login-element-form input[type="submit"] {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    background: #666e;
+    border: 2px #666e solid;
+    color: #fffd;
+} .login-element-form input[type="submit"]:hover {
+
+    background: #E03C32;
+    border: 2px #E03C32 solid;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 2px;
+} .login-warning {
+    background: #E03C32;
+    color: #fffd;
+}
+
+/* #endregion */
