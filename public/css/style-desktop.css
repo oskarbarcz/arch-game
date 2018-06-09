@@ -26,15 +26,16 @@ Font for texts: 'Open Sans', sans-serif;
     padding: 0;
     box-sizing: border-box;
 
-}
-
-body {
+} body {
     background: url("../img/bgr.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Signika Negative', sans-serif;
+} a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* #region COMMON ELEMENTS*/
@@ -53,6 +54,20 @@ body {
     -webkit-box-shadow: -2px 2px 14px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 2px 14px -1px rgba(0,0,0,0.75);
     box-shadow: -2px 2px 14px -1px rgba(0,0,0,0.75);
+} .link-as-button {
+    display: block;
+    width: 250px;
+    padding: 5px;
+    margin: 5px auto;
+    background: #666;
+    border: 2px #666 solid;
+    color: #fffd;
+    border-radius: 2px;
+} .link-as-button:hover {
+    background: #E03C32;
+    color: #fffe;
+    border: 2px solid #E03C32;
+    transition: 0.1s ease-in-out all;
 }
 /* #endregion */
 /* #region LOGIN */
@@ -108,5 +123,17 @@ body {
     background: #E03C32;
     color: #fffd;
 }
-
+/* #endregion */
+/* #region MENU */
+.menu-header {
+    margin-top: 200px;
+    padding: 10px;
+} .menu-header h1 {
+    display: none;
+} .menu-header img {
+    height: 50px;
+} .menu-info {
+    background: #89E894;
+    color: #fffd;
+}
 /* #endregion */

@@ -72,7 +72,9 @@ return [
     'router' =>
     [
         '/' => 'index',
-        '/login/' => 'login',
+        '/login' => 'login',
+        '/logoff' => 'logoff',
+        '/menu' => 'menu'
     ],
 
     // Advanced router is used for articles and many more regular elements. 
