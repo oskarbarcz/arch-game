@@ -1,3 +1,7 @@
 <?php 
 
-return ['number'=> $_SESSION['Variables']['ActualCard']];
+if(true)
+
+return [
+    'number'=> $_SESSION['Variables']['ActualCard']
+];

@@ -240,3 +240,24 @@ Font for texts: 'Open Sans', sans-serif;
     text-align: justify;
 }
 /* #endregion */
+/* #region CARD */
+.card-header {
+    margin-top: 200px;
+    padding: 10px;
+} .card-header h1 {
+    display: none;
+} .card-header img {
+    height: 50px;
+} .card-element {
+    padding: 10px 20px;
+    text-align: justify;
+} .card-element h2 {
+    text-align: center;
+    padding: 5px;
+} .card-element-link {
+    display: block;
+    text-decoration: underline;
+    padding: 5px;
+
+}
+/* #endregion */
